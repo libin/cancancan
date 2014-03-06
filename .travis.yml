@@ -7,10 +7,15 @@ rvm:
   - ree
   - jruby
   - rbx
+gemfile:
+  - gemfiles/activerecord_3.0.gemfile
+  - gemfiles/datamapper.gemfile
+  - gemfiles/mongoid.gemfile
+services:
+  - mongodb
 matrix:
   allow_failures:
     - rvm: rbx
 notifications:
   recipients:
     - bryan@bryanrite.com
-    - ryan@railscasts.com

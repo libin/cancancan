@@ -1,4 +1,4 @@
-appraise "rails 3 activerecord" do
+appraise "activerecord_3.0" do
   gem "activerecord", "~> 3.0.20"
   gem "supermodel", "~> 0.1.6"
   gem "with_model", "~> 0.2.5"
@@ -14,13 +14,13 @@ appraise "rails 3 activerecord" do
   end
 end
 
-appraise "rails 3 datamapper" do
+appraise "datamapper" do
   gem "dm-core", "~> 1.0.2"
   gem "dm-sqlite-adapter", "~> 1.0.2"
   gem "dm-migrations", "~> 1.0.2"
 end
 
-appraise "rails 3 mongoid" do
+appraise "mongoid" do
   gem "bson_ext", "~> 1.1"
   gem "mongoid", "~> 2.0.0.beta.20"
 end
